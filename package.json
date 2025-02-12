@@ -43,6 +43,7 @@
     "vite-plugin-pages": "^0.32.4",
     "vite-plugin-vue-setup-extend": "^0.4.0",
     "vite-ssg": "^25.0.0",
-    "vue-tsc": "^2.2.0"
+    "vue-tsc": "^2.2.0",
+    "pre-commit": "^1.2.2"
   }
 }
