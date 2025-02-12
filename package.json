@@ -1,0 +1,48 @@
+{
+  "name": "vite-vue3-ts",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --mode development",
+    "preview": "vite preview",
+    "ssg": "vite-ssg build --mode test"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "axios": "^1.7.9",
+    "dayjs": "^1.11.13",
+    "element-plus": "^2.9.3",
+    "gsap": "^3.12.7",
+    "lodash": "^4.17.21",
+    "pinia": "^2.3.1",
+    "swiper": "^11.2.2",
+    "thinkingdata-browser": "^2.0.3",
+    "uuid": "^11.0.5",
+    "vue": "^3.5.13",
+    "vue-i18n": "^11.1.0",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.2.0",
+    "@types/node": "^22.13.1",
+    "@types/postcss-pxtorem": "^6.1.0",
+    "@types/vue": "^2.0.0",
+    "@unhead/vue": "^1.11.18",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/tsconfig": "^0.7.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.26.0",
+    "postcss-pxtorem": "^6.1.0",
+    "sass": "^1.84.0",
+    "typescript": "~5.7.2",
+    "unocss": "^65.4.3",
+    "unplugin-auto-import": "^19.0.0",
+    "unplugin-element-plus": "^0.8.0",
+    "vite": "^6.1.0",
+    "vite-plugin-pages": "^0.32.4",
+    "vite-plugin-vue-setup-extend": "^0.4.0",
+    "vite-ssg": "^25.0.0",
+    "vue-tsc": "^2.2.0"
+  }
+}

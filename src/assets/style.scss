@@ -1,0 +1,67 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #c8c8c8;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --el-message-bg-color: red;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.el-scrollbar__wrap {
+  overflow-x: hidden !important;
+}
+
+.el-image-viewer__mask {
+  background-color: rgba($color: #000000, $alpha: 0.7) !important;
+  backdrop-filter: blur(7px) !important;
+}
+
+.el-image-viewer__canvas {
+  img {
+    border-radius: 60px 0px 60px 0px !important;
+  }
+}
+
+
+.el-image-viewer__btn {
+  display: none !important;
+}
+
+.el-message__content {
+  font-size: 24px !important;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+// 固定手机宽度
+.hand-content {
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}

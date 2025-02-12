@@ -1,0 +1,42 @@
+{
+  "zh-cn": {
+    "lang.zh-cn": "中文简体",
+    "lang.en-us": "English",
+    "lang.ja-jp": "日本語",
+    "app.title": "标题",
+    "app.keywords": "关键词",
+    "app.description": "描述",
+    "home.main": "主页",
+    "home.news": "新闻"
+  },
+  "zh-tw": {
+    "lang.zh-cn": "中文简体",
+    "lang.en-us": "English",
+    "lang.ja-jp": "日本語",
+    "app.title": "標題",
+    "app.keywords": "關鍵詞",
+    "app.description": "描述",
+    "home.main": "主頁",
+    "home.news": "新聞"
+  },
+  "en-us": {
+    "lang.zh-cn": "中文简体",
+    "lang.en-us": "English",
+    "lang.ja-jp": "日本語",
+    "app.title": "title",
+    "app.keywords": "keywords",
+    "app.description": "description",
+    "home.main": "HOMEPAGE",
+    "home.news": "NEWS"
+  },
+  "ja-jp": {
+    "lang.zh-cn": "中文简体",
+    "lang.en-us": "English",
+    "lang.ja-jp": "日本語",
+    "app.title": "タイトル",
+    "app.keywords": "キーワード",
+    "app.description": "説明",
+    "home.main": "メインページ",
+    "home.news": "ニュース"
+  }
+}

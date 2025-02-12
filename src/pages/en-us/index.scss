@@ -1,0 +1,39 @@
+.home {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (min-width: 901px) {
+  .home {
+    width: 100vw;
+
+  }
+
+  .bottom-bar-view {
+    height: 343px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #000;
+  }
+}
+
+@media (max-width: 900px) {
+  .home {
+    width: 100vw;
+    height: var(--app-view-height);
+    overflow: hidden;
+
+    .bottom-bar-view {
+      background-color: #000;
+    }
+  }
+}
+
+.home-scroll {
+  overflow-y: hidden;
+}
