@@ -5,11 +5,12 @@ import UnoCSS from "unocss/vite";
 import Pages from "vite-plugin-pages";
 import { unheadVueComposablesImports } from "@unhead/vue";
 import AutoImport from "unplugin-auto-import/vite";
+import viteCompression from "vite-plugin-compression";
 import { resolve } from "path";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "./",
+  base: "/",
   envDir: "env",
   resolve: {
     extensions: [".ts", ".vue"],
@@ -26,12 +27,21 @@ export default defineConfig({
     }),
     AutoImport({
       imports: [unheadVueComposablesImports]
+    }),
+    viteCompression({
+      verbose: true, // 控制台显示压缩日志
+      threshold: 10240, // 仅压缩 >10KB 的文件
+      algorithm: "gzip", // 压缩算法（可选 brotliCompress）
+      ext: ".gz", // 压缩文件后缀
+      deleteOriginFile: false // 保留原始文件（生产环境建议关闭）
     })
   ],
   ssr: {
+    // noExternal 配置项用于排除某些库，使其不被打包进最终的 bundle 中
     noExternal: ["thinkingdata-browser", "eventemitter3"]
   },
   optimizeDeps: {
+    // optimizeDeps 配置项用于预构建依赖项，以确保它们在开发过程中被正确加载
     include: ["eventemitter3", "window"] // 确保 eventemitter3 被预构建
   },
   css: {
@@ -49,5 +59,5 @@ export default defineConfig({
       ]
     }
   },
-  build: {}
+  build: { assetsInlineLimit: 1024 * 10 }
 });
